@@ -1,7 +1,7 @@
-require 'redmine'
-require 'redmine_omniauth_saml'
-require 'redmine_omniauth_saml/hooks'
-require 'redmine_omniauth_saml/user_patch'
+# require 'redmine'
+# require 'redmine_omniauth_saml'
+# require 'redmine_omniauth_saml/hooks'
+# require 'redmine_omniauth_saml/user_patch'
 
 
 # Patches to existing classes/modules
