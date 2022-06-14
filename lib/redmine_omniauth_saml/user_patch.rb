@@ -13,7 +13,7 @@ module RedmineOmniauthSaml::UserPatch
       user = self.find_by_login(user_attributes[:login])
       unless user
         user = EmailAddress.find_by(address: user_attributes[:mail]).try(:user)
-        if user.nil? && RedmineOmniauthSaml.onthefly_creation? 
+        if user.nil? && RedmineOmniauthSaml.onthefly_creation?
           user = new user_attributes
           user.created_by_omniauth_saml = true
           user.login    = user_attributes[:login]
