@@ -1,6 +1,6 @@
 # Redmine OmniAuth SAML plugin
 
-This plugins adds SAML authentication support for "Redmine":http://www.redmine.org
+This plugins adds SAML authentication support for [Redmine](http://www.redmine.org)
 
 ## Install
 
