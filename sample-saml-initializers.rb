@@ -1,3 +1,5 @@
+require Rails.root.join('plugins/redmine_omniauth_saml/lib/redmine_omniauth_saml')
+
 RedmineOmniauthSaml::Base.configure do |config|
   config.saml = {
     :assertion_consumer_service_url => "http://redmine.example.com/auth/saml/callback", # OmniAuth callback URL
