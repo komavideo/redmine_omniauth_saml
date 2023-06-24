@@ -6,6 +6,7 @@ RedmineOmniauthSaml::Base.configure do |config|
     :issuer                         => "http://redmine.example.com/saml/metadata",      # The issuer name / entity ID. Must be an URI as per SAML 2.0 spec.
     :single_logout_service_url      => "http://redmine.example.com/auth/saml/sls",      # The SLS (logout) callback URL
     :idp_sso_target_url             => "http://sso.desarrollo.unlp.edu.ar/saml2/idp/SSOService.php", # SSO login endpoint
+    # openssl x509 -sha1 -fingerprint -noout -in plugins/redmine_omniauth_saml/Google_SAML2_0.pem
     :idp_cert_fingerprint           => "certificate fingerprint", # SSO ssl certificate fingerprint
     # Alternatively, specify the full certifiate:
     #:idp_cert                       => "-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE-----",
@@ -18,7 +19,7 @@ RedmineOmniauthSaml::Base.configure do |config|
       :login      => 'extra.raw_info.username',
       :mail       => 'extra.raw_info.email',
       :firstname  => 'extra.raw_info.firstname',
-      :lastname   => 'extra.raw_info.firstname'
+      :lastname   => 'extra.raw_info.lastname'
     }
   }
 
